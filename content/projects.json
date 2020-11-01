@@ -1,0 +1,26 @@
+[
+  {
+    "title": "CoinConvert",
+    "description": "Cryptocurrency Conversion Website",
+    "image": "./images/coinconvert.png",
+    "hasWebsite": 1,
+    "website": "https://google.com",
+    "github": "https://github.com/Andxre"
+  },
+  {
+    "title": "Chegg Bot",
+    "description": "Test Description",
+    "image": "./images/github-icon.png",
+    "hasWebsite": 0,
+    "website": "https://google.com",
+    "github": "https://github.com/Andxre"
+  },
+  {
+    "title": "Test Data",
+    "description": "Test Description",
+    "image": "./images/dev.png",
+    "hasWebsite": 0,
+    "website": "https://google.com",
+    "github": "https://github.com/Andxre"
+  }
+]
