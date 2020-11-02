@@ -1,14 +1,12 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
 import Card from "../components/card"
 
 const ProjectPage = ({ data }) => {
   const dataArr = data.allProjectsJson.edges
-  console.log(dataArr)
   return (
     <Layout>
       <SEO title="Projects" />

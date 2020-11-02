@@ -1,17 +1,51 @@
 import React from "react"
-import { Link } from "gatsby"
+import { graphql, Link } from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
 
-const BlogPage = () => (
-  <Layout>
-    <SEO title="Blog" />
-    <div className="blog-title">
-      <h1>Blog</h1>
-    </div>
-  </Layout>
-)
+const BlogPage = ({ data }) => {
+  const { allMarkdownRemark } = data
+  return (
+    <Layout>
+      <SEO title="Blog" />
+      <div className="wrapper">
+        <div className="project-title">
+          <h1>Blog</h1>
+          <p>Welcome to my personal blog</p>
+        </div>
+        <div className="blog-wrapper">
+          {allMarkdownRemark.edges.map((edge, index) => (
+            <div className="blog-post">
+              <Link to={edge.node.frontmatter.slug}>
+                <h1>{edge.node.frontmatter.title}</h1>
+              </Link>
+              <p className="blog-post-excerpt">{edge.node.excerpt}</p>
+              <p className="blog-post-date">{edge.node.frontmatter.date}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </Layout>
+  )
+}
 
 export default BlogPage
+
+export const queryResults = graphql`
+  query blogQuery {
+    allMarkdownRemark {
+      edges {
+        node {
+          frontmatter {
+            title
+            slug
+            date
+          }
+          excerpt
+          html
+        }
+      }
+    }
+  }
+`

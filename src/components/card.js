@@ -1,5 +1,4 @@
 import React from "react"
-import githubIcon from "../images/github-icon.png"
 
 const Card = ({ data }) => {
   // Destructure post and grab data (Post should be a graphQL Node)
@@ -8,23 +7,29 @@ const Card = ({ data }) => {
   return (
     <div className="card">
       <div className="card-picture">
-        <img src={data.image.childImageSharp.fluid.src}></img>
+        <img src={data.image.childImageSharp.fluid.src} alt="No Image" />
       </div>
       <div className="card-text">
-        <p>{data.title}</p>
-        <p>{data.description}</p>
+        <p className="title">{data.title}</p>
+        <p className="desc">{data.description}</p>
       </div>
       <div className="buttons">
         <a
-          href={data.hasWebsite == 1 ? data.website : `#`}
+          href={data.hasWebsite === 1 ? data.website : `#`}
           target="_blank"
-          className={data.hasWebsite == 1 ? `button` : `button disable`}
+          rel="noreferrer"
+          className={data.hasWebsite === 1 ? `button` : `button disable`}
         >
-          {data.hasWebsite == 1 ? `Website` : `No Demo`}
+          {data.hasWebsite === 1 ? `Website` : `No Demo`}
         </a>
 
         {/*Greyed out if there is no live website*/}
-        <a href={data.github} target="_blank" className="button">
+        <a
+          href={data.github}
+          target="_blank"
+          className="button"
+          rel="noreferrer"
+        >
           Github
         </a>
       </div>
