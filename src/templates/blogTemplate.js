@@ -20,6 +20,8 @@ export default function Template({ data }) {
             className="blog-post-content"
             dangerouslySetInnerHTML={{ __html: html }}
           />
+        </div>
+        <div className="blog-back-button">
           <Link to="/blog" className="button">
             Back
           </Link>

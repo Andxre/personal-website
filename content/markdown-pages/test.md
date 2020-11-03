@@ -4,31 +4,68 @@ date: "2020-10-31"
 title: "My First Post"
 ---
 
-# This is a test post!
+# Simulating Multiple Inheritance in C`#`
 
-Hey there, welcome to the blog! This is my second web development project.
+Taking Object Oriented Design was tough, but not this tough.
 
-## Technologies:
+Before we get into this, lets talk about multiple inheritance in general.
 
-- GatsbyJS
-- SCSS
-- GraphQL
+```cpp
+public class A {
+    void foo();
+}
 
-Here is a code snippet demonstrating python's basic syntax:
+public class B {
+    void bar();
+}
 
-```python
-import random
-print("Hello World")
-x = 5
-y = 10
-print(x+y) # 15
+class C : public A, public B {
+
+}
+
+int main() {
+    C obj = new C();
+
+    C.foo();
+    C.bar();
+
+}
+
+
+
+
 ```
 
-The syntax is different in Javascript:
+```csharp
+// Single Inheritance with Delegate (Polymorphic Subobjects)
+public interface IDataObject {
+	int[] Filter();
+	int[] Scramble();
+}
 
-```javascript
-console.log("Hello World") // Hello World
-let x = 5
-let y = 10
-console.log(x + y) // 15
+public class DataBeacon : Beacon, IDataObject {
+
+    private DataFilter obj; // This can hold any object in the datafilter heirarchy
+
+	public DataBeacon(DataFilter dataObj) {
+		obj = dataObj; // Gains the functionality of passed in dataObj;
+	}
+
+	public int[] Filter() {
+		obj.Filter();
+	}
+
+	public int[] Scramble(int [] seq) {
+		obj.Scramble(int [] seq);
+	}
+
+	public void FilterSignal() {
+		base.changeSignal(Filter())
+	}
+
+	public void ScrambleSignal(int [] sequence) {
+		base.changeSignal(Scramble(sequence));
+	}
+
+}
 ```

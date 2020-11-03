@@ -6,8 +6,13 @@ const Card = ({ data }) => {
   // Post Type: Project
   return (
     <div className="card">
-      <div className="card-picture">
-        <img src={data.image.childImageSharp.fluid.src} alt="No Image" />
+      <div
+        className="card-picture"
+        style={{
+          backgroundImage: `url(${data.image.childImageSharp.fluid.src})`,
+        }}
+      >
+        {/* <img src={data.image.childImageSharp.fluid.src} alt="No Image" /> */}
       </div>
       <div className="card-text">
         <p className="title">{data.title}</p>
