@@ -94,7 +94,7 @@ h3 {
 }
 
 .sidebar {
-  display: flex;
+  display: none;
   position: fixed;
   background-color: #0d1219;
   top: 0;
@@ -129,6 +129,9 @@ h3 {
       margin-top: 1rem;
       font-size: 40px;
     }
+  }
+  @media only screen and (max-width: 700px) {
+    display: flex;
   }
 }
 
@@ -223,6 +226,9 @@ h3 {
     h3 {
       text-align: center;
       margin: 5px;
+    }
+    p {
+      text-align: center;
     }
   }
 }
@@ -378,7 +384,7 @@ h3 {
         margin-top: 3px;
       }
       p {
-        font-size: 16px;
+        font-size: 18px;
       }
     }
   }

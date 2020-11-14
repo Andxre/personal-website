@@ -61,5 +61,13 @@ module.exports = {
         transitionTime: 500,
       },
     },
+    {
+      resolve: `gatsby-source-graphql`,
+      options: {
+        typeName: `GraphCMS`,
+        fieldName: `gcms`,
+        url: `https://api-us-west-2.graphcms.com/v2/ckhh1vz5ta4c201yx3w9cdzbp/master`,
+      },
+    },
   ],
 }

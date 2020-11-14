@@ -4,23 +4,23 @@
     "description": "Cryptocurrency Conversion Website",
     "image": "./images/coinconvert.png",
     "hasWebsite": 1,
-    "website": "https://google.com",
-    "github": "https://github.com/Andxre"
+    "website": "https://amazing-payne-554985.netlify.app/",
+    "github": "https://github.com/Andxre/cryptoConvert"
   },
   {
-    "title": "Chegg Bot",
-    "description": "Test Description",
-    "image": "./images/github-icon.png",
-    "hasWebsite": 0,
-    "website": "https://google.com",
-    "github": "https://github.com/Andxre"
+    "title": "Personal Website",
+    "description": "A Personal Website made with GatsbyJS ",
+    "image": "./images/website.png",
+    "hasWebsite": 1,
+    "website": "https://boring-cori-489e11.netlify.app/",
+    "github": "https://github.com/Andxre/personal-website"
   },
   {
-    "title": "Test Data",
-    "description": "Test Description",
+    "title": "Discord Marketplace Bot",
+    "description": "Custom ticket system for handling service requests",
     "image": "./images/dev.png",
     "hasWebsite": 0,
     "website": "https://google.com",
-    "github": "https://github.com/Andxre"
+    "github": "https://github.com/Andxre/MarketPlace-Discord-Bot"
   }
 ]
