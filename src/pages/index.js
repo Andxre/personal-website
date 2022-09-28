@@ -14,7 +14,7 @@ const IndexPage = () => {
         <div className="wrapper">
           <div className="home-text">
             <h1>Andre Dasalla</h1>
-            <h3>Computer Science Student</h3>
+            <h3>Software Engineer</h3>
             <div className="social-icons">
               <a
                 href="https://www.linkedin.com/in/andre-dasalla-063a0411a/"
@@ -64,10 +64,15 @@ const IndexPage = () => {
             <div className="about-text">
               <h3>Who Am I?</h3>
               <p>
-                Hello! My name is Andre Dasalla and I am a junior CS student at
-                Seattle University. I am currently teaching myself Web
-                Development including: React, NodeJS, MongoDB.
+                Hello! My name is Andre Dasalla and I am a Backend Software
+                Engineer at Expedia Group.
               </p>
+              <p>I am currently learning: </p>
+              <ul>
+                <li>ElasticSearch</li>
+                <li>gRPC</li>
+                <li>Spring Boot</li>
+              </ul>
               <h3>Why this website?</h3>
               <p>
                 I made this website to test my knowledge in React and to learn

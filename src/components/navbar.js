@@ -13,7 +13,7 @@ const Navbar = ({ toggleSidebar }) => {
           Projects
         </Link>
         <Link activeClassName="active" to="/blog">
-          Blog
+          Posts
         </Link>
         <Link activeClassName="active" to="/contact">
           Contact
