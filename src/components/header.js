@@ -1,7 +1,7 @@
 import React from "react"
 import { useState, useEffect } from "react"
-import Navbar from "./Navbar"
-import Sidebar from "./Sidebar"
+import Navbar from "./navbar"
+import Sidebar from "./sidebar"
 
 const Header = ({ siteTitle }) => {
   const [isOpen, setIsOpen] = useState(false)
@@ -17,7 +17,7 @@ const Header = ({ siteTitle }) => {
 
   return (
     <header className="header">
-      <p>Andre</p>
+      <p>ANDRE</p>
       <Navbar toggleSidebar={toggleSidebar} />
       <Sidebar isOpen={isOpen} toggleSidebar={toggleSidebar} />
     </header>

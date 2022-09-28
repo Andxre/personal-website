@@ -12,8 +12,8 @@ const BlogPage = ({ data }) => {
         <SEO title="Blog" />
         <div className="wrapper">
           <div className="project-title">
-            <h1>Blog</h1>
-            <p>Welcome to my personal blog</p>
+            <h1>Posts</h1>
+            <p>Posts about things</p>
           </div>
           <div className="blog-wrapper">
             {allMarkdownRemark.edges.map((edge, index) => (

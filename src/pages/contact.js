@@ -28,7 +28,7 @@ const ContactPage = () => {
         ...state,
       }),
     })
-      .then(() => navigate(form.getAttribute("action")))
+      .then(() => navigate("/blog"))
       .catch(error => alert(error))
   }
 
@@ -79,7 +79,7 @@ const ContactPage = () => {
               </label>
             </p>
             <p>
-              <button type="submit">Send</button>
+              <button className="button" type="submit">Send</button>
             </p>
           </form>
         </div>
